@@ -20,7 +20,7 @@ tasks = [
 
 @app.route("/api/v1/tasks", methods=['GET'])
 def get():
-    if len(task) == 0:
+    if len(tasks) == 0:
         abort(404)
     
     return jsonify({"task": tasks})
